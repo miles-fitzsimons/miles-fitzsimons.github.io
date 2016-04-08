@@ -29,69 +29,49 @@ li {
 
 }
 
-
-// .caption {
-//     position: relative;
-//     overflow: hidden;
-// }
-// .caption__media {
-//     // display: block;
-//     // min-width: 100%;
-//     // max-width: 100%;
-//     // height: auto;
-//     position: absolute;
-//       left: 0px;
-//   margin-left: 20vw;
-//   margin-top: 5vw;
-//   height: 30vw;
-
-// }
-// .caption__overlay {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     padding: 10px;
-//     color: #000000;
-//     transform: translateY(100%);
-//     transition: transform .35s ease-out;
-// }
-// .caption:hover .caption__overlay {
-//     transform: translateY(0);
-// }
-
+#email{
+  color: #000000;
+}
 
 #images{
   vertical-align: middle;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 }
 
-h2 {
-  position: absolute;
-  left: 21vw;
-  top: 15vw;
+.text1 {
+  left: 0;
+  position:absolute;
+  left: 0px;
+  margin-left: 29vw;
+  margin-top: 5vw;
   font-family: sans-serif;
-  // opacity: 0;
+  font-size: large;
 }
 
-
-
+.text2 {
+  right: 0;
+  position:absolute;
+  right: 0px;
+  margin-right: 26vw;
+  margin-top: 5vw;
+  font-family: sans-serif;
+  font-size: large;
+}
 
 #mirror {
   position: absolute;
   left: 0px;
   margin-left: 20vw;
-  margin-top: 5vw;
+  margin-top: 10vw;
   height: 30vw;
 }
 
 #hourglass {
     position: absolute;
     right: 0px;
-    padding-right: 20vw;
-    padding-top: 5vw;
+    margin-right: 20vw;
+    margin-top: 10vw;
     height: 30vw;
 }
 
@@ -100,13 +80,27 @@ h2 {
     opacity: 0.3;
 }
 
-
-
-
-
-
-
-p {
-  color: red;
+#hourglass:hover {
+  opacity: 0.3;
 }
 
+.blogQ {
+  
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 1vw;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 16pt;
+}
+
+.blogA {
+  margin-top: 1vw;
+  margin-left: 4vw;
+  margin-bottom: 4vw;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 12pt;
+
+
+}
