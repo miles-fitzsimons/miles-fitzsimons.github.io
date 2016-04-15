@@ -87,6 +87,10 @@ h1 {
   color: #FFFFFF;
 }
 
+.bodylink {
+  color: #000000;
+}
+
 .heading {
   font-family: 'Great Vibes', cursive;
   font-size: 70px;
