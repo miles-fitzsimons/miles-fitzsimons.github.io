@@ -3,8 +3,8 @@ nav {
   text-align: center;
 }
 
-.pagehead {
-  font-size: 4rem;
+h1 {
+  // font-size: 4rem;
   color: #FFFFFF;
 }
 
@@ -22,7 +22,31 @@ li {
   }
 }
 
+.one.column {
+  background-color: red;
+}
 
+img {
+  width: 100px;
+}
+
+section {
+  text-align: center;
+}
+
+h5 {
+  border-top: solid thin #C5C3C3;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+
+}
+
+.foot {
+  color: #FFFFFF;
+}
 
 
 // @media (min-width: 400px){
