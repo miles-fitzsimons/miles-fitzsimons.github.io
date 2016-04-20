@@ -1,0 +1,28 @@
+header {
+    background-color: red;
+    text-align: center;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (min-width:550px){
+    li {
+        display: inline;
+    }
+}
+
+body {
+    background-color: blue;
+}
+
+@media screen and (min-width: 550px){
+    body{
+        background-color: purple;
+    }
+}

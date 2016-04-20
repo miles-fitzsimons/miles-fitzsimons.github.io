@@ -1,149 +1,78 @@
-nav {
+
+header {
   background-color: #000000;
   text-align: center;
-}
-
-h1 {
-  // font-size: 4rem;
-  color: #FFFFFF;
-}
-
-.navigation {
-  list-style: none;
-}
-
-li {
-  display: block;
-}
-
-@media screen and (min-width: 400px){
-  li {
-    display: inline;
-  }
-}
-
-.one.column {
-  background-color: red;
-}
-
-img {
-  width: 100px;
+  padding-bottom: 1rem;
 }
 
 section {
   text-align: center;
 }
 
-h5 {
-  border-top: solid thin #C5C3C3;
+h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+h3 {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: x-large;
+  padding: 0 1rem; 
+}
+
+a:hover {
+  color: #808080;
+}
+
+li {
+  margin: 0;
+}
+
+// .six.columns {
+//   background-color: green;
+// }
+
+.three.columns {
+  display: none;
+  height: 1rem;
+}
+
+@media screen and (min-width:550px){
+  li {
+    display: inline;
+  }
+  a {
+    font-size: medium;
+  }
+  .three.columns {
+    display: initial;
+  }
+}
+
+
+
+img {
+  width: 50%;
+}
+
+article {
+  border-top: medium solid grey;
 }
 
 footer {
-  background-color: #000000;
   text-align: center;
-
-}
-
-.foot {
-  color: #FFFFFF;
+  background-color: red;
 }
 
 
-// @media (min-width: 400px){
-//   .mobile {
-//     display: none;
-//   }
-// }
 
-// @media (max-width: 400px){
-//   .desktop {
-//     display: none;
-//   }
-// }
-
-// nav {
-//   background-color: red;
-// }
-
-// .navi {
-//   list-style: none;
-// }
-
-// li {
-//   // display: block;
-// }
-
-
-
-
-// nav {
-//   background-color: #000000;
-//   text-align: center;
-// }
-
-// img {
-//   width: 5rem;
-//   vertical-align: middle;
-// }
-
-// header {
-//   background-color: #000000;
-//   text-align: center;
-// }
-
-// h1 {
-//   color: #FFFFFF;
-// }
-
-
-// @media (max-width: 400px) {
-//   .navi {
-//     display: none;
-//   }
-// }
-
-// .navi {
-//   // list-style: none;
-//   text-align: center;
-//   margin: 0;
-//   background-color: #000000;
-//   border-bottom: #FFFFFF medium solid;
-// }
-
-// li {
-//   display: inline;
-//   padding: 0 2rem;
-// }
-
-// a {
-//   color: #FFFFFF;
-//   text-decoration: none;
-// }
-
-// header {
-//   text-align: center;
-//   background-color: #000000;
-
-// }
-
-// h1 {
-//   color: #FFFFFF;
-//   margin: 0;
-// }
-
-// // .pageheading {
-// //   font-size: 4rem;
-// //   color: #FFFFFF;
-// //   margin: 0;
-// // }
-
-// .contentheading{
-//   text-align: center;
-//   font-size: 3rem;
-// }
-
-// section {
-//   background-color: green;
-//   margin: 0 auto;
-//   max-width: 80%
-// }
