@@ -1,3 +1,6 @@
+/* TO DO 
+Make navbar links like buttons in mobile*/
+
 
 header {
   background-color: #000000;
@@ -15,12 +18,18 @@ h1 {
 }
 
 h3 {
-  margin: 1rem 0;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 2rem 0;
 }
 
 ul {
   list-style: none;
   margin: 0;
+  padding: 0.5rem 0;
 }
 
 a {
@@ -29,22 +38,41 @@ a {
   font-size: x-large;
   padding: 0 1rem; 
 }
-
 a:hover {
+  color: #FFFFFF;
+}
+
+.navlink {
+  text-decoration: underline;
+}
+
+.navlink:hover {
   color: #808080;
 }
+
+
 
 li {
   margin: 0;
 }
 
-// .six.columns {
-//   background-color: green;
-// }
-
-.three.columns {
+.two.columns {
   display: none;
   height: 1rem;
+}
+
+.classinfo {
+  display: none;
+  padding-top: 1rem;
+}
+
+.contacticon {
+  width: 10%;
+  padding-top: 1rem;
+}
+
+.contactinfo {
+  display: inline;
 }
 
 @media screen and (min-width:550px){
@@ -54,25 +82,33 @@ li {
   a {
     font-size: medium;
   }
-  .three.columns {
+  .two.columns {
     display: initial;
+  }
+  .classinfo {
+    display: initial;
+  }
+  .contacticon {
+    width: 4%;
   }
 }
 
-
-
 img {
-  width: 50%;
+  width: 30%;
 }
 
 article {
   border-top: medium solid grey;
+  padding-bottom: 2rem;
 }
 
 footer {
   text-align: center;
-  background-color: red;
+  background-color: #000000;
 }
 
+footer, header {
+  padding: 1rem 0;
+}
 
 
