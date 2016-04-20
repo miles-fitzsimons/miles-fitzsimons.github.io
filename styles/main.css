@@ -20,6 +20,7 @@ h3 {
 
 h4 {
   margin: 2rem 0;
+  color: #000000;
 }
 
 ul {
@@ -63,6 +64,7 @@ li {
 
 .contactinfo {
   display: inline;
+  padding: 0 1rem;
 }
 
 @media screen and (min-width:550px){
@@ -121,4 +123,12 @@ footer, header {
   color: #FFFFFF;
 }
 
+.bloglink {
+  color: #000000;
+  text-decoration: none;
+}
 
+.bloghover:hover {
+  color: #808080;
+  opacity: 0.4;
+}
