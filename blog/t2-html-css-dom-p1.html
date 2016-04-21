@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Miles Fitzsimons' Technical Blog Part 1</title>
+  <title>Miles Fitzsimons - Technical Blog Part 1</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="header">
-    <h1>Miles Fitzsimons</h1>
-    <ul class="headfootlist">
-      <li class="headfootpoint"><a class="link" href="http://devacademy.co.nz/">EDA</a></li>
-      <li class="headfootpoint">Kea</li>
-      <li class="headfootpoint">2016</li>
-    </ul>
-  </div>
-  <div class="mid">
-    <div class="sidebar">
-      <ul class="sidelist">
-        <li class="sidepoint"><a class="hoverlink" href="../index.html">Home</a></li>
-      </ul>
-      <ul class="sidelist">
-        <li class="sidehead">Blogs</li>
-        <li class="sidepoint"><a class="hoverlink" href="c1-reflection-blog.html">Reflection</a></li>
-        <li class="sidepoint"><a class="hoverlink" href="c1-time-and-habits-blog.html">Time and Habits</a></li>
-        <li class="sidepoint"><div class="here">Technical Part 1</div></li>
-        <li class="sidepoint"><a class="hoverlink" href="t2-html-css-dom-p2.html">Technical Part 2</a></li>
-        <li class="sidepoint"><a class="hoverlink" href="c2-emotional-intelligence.html">Emotional Intelligence</a></li>
-      </ul>
-      <ul class="sidelist">
-        <li class="sidehead">Resources</li>
-        <li class="sidepoint"><a class="hoverlink" href="https://github.com/miles-fitzsimons?tab=repositories">My GitHub</a></li>
-        <li class="sidepoint"><a class="hoverlink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS References</a></li>
-        <li class="sidepoint"><a class="hoverlink" href="https://validator.w3.org/#validate_by_input">HTML Validator</a></li>
-        <li class="sidepoint"><a class="hoverlink" href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validator</a></li>
-      </ul>
+
+  <!-- Header -->
+  <div class="row">
+    <div class="twelve columns">
+      <header>
+        <h1>Miles Fitzsimons</h1>
+        <nav>
+          <ul>
+            <li><a class="navlink" href="../index.html" title="">Home</a></li>
+            <li><a class="navlink" href="../about.html" title="">About</a></li>
+            <li><a class="navlink" href="../projects.html" title="">Projects</a></li>
+            <li><a class="navlink" href="#contacts" title="">Contact</a></li>
+          </ul>
+        </nav>        
+      </header>
     </div>
-    <div class="content">
-      <h2 class="heading">Technical Blog Part 1</h2>
-      <p class="date">14 April 2016</p>
-      <h3 class="blogQ">Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
-      <p class="blogA">
-       Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?<br><br>I think of the relationship between HTML, CSS and the DOM to be analagous to a house.<br><br>In particular, HTML represents the physical structure of the house. That includes, for example, the walls, the floor, the roof and other more subtle features such as the window frames, door frames and ceilings.<br><br>CSS represents the exterior and interior decoration of the house. That includes, for example, the colour of the house, the colour and material (e.g, paint or wallpaper) of the walls in each room, the carpet or floorboards, the colour and material (e.g, tiles or corrugated iron) of the roof, the art and furniture and so on.<br><br>Finally, the DOM represents the blueprint of the house. The DOM (blueprint) is closely related to HTML (physical structure). However, this relationship is backwards as the DOM is usually created from HTML, whereas the structure of a house is created from a blueprint.        
-     </p>
-     <h3 class="blogQ">What is meant by boxifying design?</h3>
-     <p class="blogA">
-       Boxifying design relates to the initial design phase of the look and layout of a website. In HTML and CSS, all of the elements are ulitmately provided as boxes (i.e, rectangles or squares). A single large box encompase the entire website layout (usually &#60;body&#62; or &#60;html&#62; or both) and all of the other boxes are provided within. From here, various sections (e.g, header or footer) are provided, each of which can be broken down into further boxes, as shown in the image below.<br><br><img src="../images/boxify.png" alt=""><br><br>You will see that the header section is defined by a box. Within the header box there is another box for the logo, the title and the position. This is an example of boxifying design.
-     </p>
-     <h3 class="blogQ">What is the box model?</h3>
-     <p class="blogA">
-       The box model is a concept in CSS that defines the dimensions of an element. The box model includes the content in the centre. The content is surrounded by padding, which is surrounded by a border, which is ultimately surrounded by a margin. The dimensions of each of these elements can be changed to achieve the desired layout of the content on a webpage.<br><br><img src="../images/boxmodel.png" alt="">
-     </p>
-   </div>
- </div>
- <div class="footer">
-  <ul class="headfootlist">
-    <li class="headfootpoint"><a class="link" href="mailto:miles.fitzsimons@gmail.com">miles.fitzsimons@gmail.com</a></li>
-    <li class="headfootpoint">+64 22 032 8976</li>
-    <li class="headfootpoint">Wellington</li>
-  </ul>
-</div>
+  </div>
+
+  <!-- Content -->
+  <div class="row">
+    <div class="two columns"></div>
+    <div class="eight columns">
+      <section>
+        <h3>Technical Part 1</h3>
+        <h6>14 April 2016</h6>
+
+        <article>  
+          <h4>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h4>
+          <p>
+            Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?<br><br>I think of the relationship between HTML, CSS and the DOM to be analagous to a house.<br><br>In particular, HTML represents the physical structure of the house. That includes, for example, the walls, the floor, the roof and other more subtle features such as the window frames, door frames and ceilings.<br><br>CSS represents the exterior and interior decoration of the house. That includes, for example, the colour of the house, the colour and material (e.g, paint or wallpaper) of the walls in each room, the carpet or floorboards, the colour and material (e.g, tiles or corrugated iron) of the roof, the art and furniture and so on.<br><br>Finally, the DOM represents the blueprint of the house. The DOM (blueprint) is closely related to HTML (physical structure). However, this relationship is backwards as the DOM is usually created from HTML, whereas the structure of a house is created from a blueprint.
+          </p>
+        </article>
+
+        <article>  
+          <h4>What is meant by boxifying design?</h4>
+          <p>
+          Boxifying design relates to the initial design phase of the look and layout of a website. In HTML and CSS, all of the elements are ulitmately provided as boxes (i.e, rectangles or squares). A single large box encompase the entire website layout (usually &#60;body&#62; or &#60;html&#62; or both) and all of the other boxes are provided within. From here, various sections (e.g, header or footer) are provided, each of which can be broken down into further boxes, as shown in the image below.<br><br><img class="blogimg" src="../images/boxify.png" alt=""><br><br>You will see that the header section is defined by a box. Within the header box there is another box for the logo, the title and the position. This is an example of boxifying design.
+          </p>
+        </article>
+
+        <article>  
+          <h4>What is the box model?</h4>
+          <p>
+            The box model is a concept in CSS that defines the dimensions of an element. The box model includes the content in the centre. The content is surrounded by padding, which is surrounded by a border, which is ultimately surrounded by a margin. The dimensions of each of these elements can be changed to achieve the desired layout of the content on a webpage.<br><br><img class="blogimg" src="../images/boxmodel.png" alt="">
+          </p>
+        </article>
+
+      </section>
+    </div>
+    <div class="two columns"></div>
+  </div>
+
+  <!-- Footer -->
+  <div class="row">
+    <div class="twelve columns">
+      <footer>
+        <ul class="classinfo">
+          <li><a class="navlink" href="http://devacademy.co.nz/" target="_blank">EDA</a></li>
+          <li><a class="footinfo">Kea</a></li>
+          <li><a class="footinfo">2016</a></li>
+          <li><a class="footinfo">Wellington</a></li>
+        </ul>      
+        <ul id="contacts">
+          <li class="contactinfo"><a href="mailto:miles.fitzsimons@gmail.com"><img class="contacticon" src="../images/email2.png" alt=""></a></li>
+          <li class="contactinfo"><a href="tel:+64220328976"><img class="contacticon" src="../images/phone.png" alt=""></a></li>
+          <li class="contactinfo"><a href="https://github.com/miles-fitzsimons" target="_blank"><img class="contacticon" src="../images/github.png" alt=""></a></li>
+          <li class="contactinfo"><a href="https://au.linkedin.com/in/miles-fitzsimons-2a325041" target="_blank"><img class="contacticon" src="../images/linkedin.png" alt=""></a></li>
+        </ul>      
+      </footer>
+    </div>
+  </div>
+
 </body>
 </html>
