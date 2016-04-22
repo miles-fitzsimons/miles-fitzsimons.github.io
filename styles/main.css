@@ -123,14 +123,19 @@ article {
   padding-bottom: 2rem;
 }
 
+header {
+  padding: 1rem 0;
+}
+
 footer {
   text-align: center;
   background-color: #000000;
+  padding: 0;
 }
 
-footer, header {
-  padding: 1rem 0;
-}
+// footer, header {
+//   padding: 1rem 0;
+// }
 
 .footinfo {
   color: #FFFFFF;
@@ -170,5 +175,10 @@ h6 {
 .bodylink:hover {
   color: #808080;
 }
+
+i {
+  color: white;
+}
+
 
 // Mobile view nav buttons inline?
