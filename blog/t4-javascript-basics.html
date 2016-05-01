@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miles Fitzsimons - Technical Blog Part 4</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- Header -->
+	<div class="row">
+		<div class="twelve columns">
+			<header>
+				<h1>Miles Fitzsimons</h1>
+				<nav>
+					<ul>
+						<li><a class="navlink" href="../index.html" title="">Home</a></li>
+						<li><a class="navlink" href="../about.html" title="">About</a></li>
+						<li><a class="navlink" href="../projects.html" title="">Projects</a></li>
+						<li><a class="navlink" href="#contacts" title="">Contact</a></li>						
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="row">
+		<div class="two columns"></div>
+		<div class="eight columns">
+			<section>
+				<h3>Technical Part 4</h3>
+				<h6>1 May 2016</h6>
+
+				<article>  
+					<h4>How does JavaScript compare to HTML and CSS?</h4>
+					<p>
+						HTML is used to create the basic structure and actual content of a website. CSS is used for the styling the HTML elements of the page. CSS defines how how content is laid out and how it looks. Javascript is used for changing or animating the HTML elements once a website has loaded. For example, a button that when clicked makes text disappear can be built with JavaScript. JavaScript is an object-orientated programming language.
+					</p>
+				</article>
+
+				<article>  
+					<h4>What is control flow and loops?</h4>
+					<p>
+						Control flow is the order in which individual statements, instructions or function calls of a program are executed or evaluated. Control flow can be executed by using one or more of a number of control flow constructs. For example, an if statement evaluates whether a condition is true and, if so, executes a code snippet. A for or while loop can be used to execute a code snippet a number of times to manipulate variables.<br><br>A number of everyday life examples of control flow are provided in psuedocode below.<br><br>Weather:<br>
+						<code>
+							if ( it is cold && it is raining )<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;{ wear your coat and take your umbrella }<br>
+							else if ( it is cold )<br> 
+							&nbsp;&nbsp;&nbsp;&nbsp;{ wear your coat }<br>
+							else if ( it is raining )<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;{ take your umbrella }<br>
+							else <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;{ leave now }
+						</code>
+						<br><br>
+						Bread:<br>
+						<code>
+							while ( the dough is smaller than twice its original size )<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;{ let the dough rise in a warm place }
+						</code>
+						<br><br>
+						Coffee:<br>
+						<code>
+							for ( ten times )
+							{ stir }
+						</code>
+					</p>
+				</article>
+
+				<article>
+					<h4>What is the difference between accessing data from arrays and object literals?</h4>
+					<p>
+						An array type is a data type that describes a collection of elements (values or variables), each of which can selected by using one or more indices. For example, an array may describe a number of integers, such as: <code>myArray = [2,5,1,0,4,7,3]</code>.<br><br>myArray has a length of 7. In JavaScript, the array index begins at zero. <code>myArray[0]</code> can be used to access the first integer (i.e, 2).<br><br>An object is a data structure that defines a number of key-value pairs and can be used to describe real world environments or scenarios. A value is accessed by calling the corresponding key. In contrast to arrays, object values are not indexed. For example, you might describe a car using object-literal notation, such as:<br>
+						<code>
+							myCar = {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;colour: "black",<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;wheels: 4,<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;make: "Toyota",<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;model: "Corolla",<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;year: 2016<br>
+						};
+					</code><br><br>
+					You could access the year value of the car by calling <code>myCar[“year”]</code> (bracket notation) or <code>myCar.year</code> (dot notation).
+				</p>
+			</article>
+
+			<article>
+				<h4>What are functions and why are they useful?</h4>
+				<p>
+					A JavaScript function is a block of code designed to perform a particular task. AJavaScript function is executed when something invokes it (calls it). Functions are useful in cases where the same block of code needs to be executed numerous times. This invokes the “DRY” (don’t repeat yourself) principle.
+				</p>
+			</article>
+
+		</section>
+	</div>
+	<div class="two columns"></div>
+</div>
+
+<!-- Footer -->
+<div class="row">
+	<div class="twelve columns">
+		<footer>
+			<ul class="classinfo">
+				<li><a class="navlink" href="http://devacademy.co.nz/" target="_blank">EDA</a></li>
+				<li><a class="footinfo">Kea</a></li>
+				<li><a class="footinfo">2016</a></li>
+				<li><a class="footinfo">Wellington</a></li>
+			</ul>      
+			<ul id="contacts">
+				<li class="contactinfo"><a href="mailto:miles.fitzsimons@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+				<li class="contactinfo"><a href="tel:+64220328976"><i class="fa fa-phone-square fa-3x"></i></a></li>
+				<li class="contactinfo"><a href="https://github.com/miles-fitzsimons" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
+				<li class="contactinfo"><a href="https://au.linkedin.com/in/miles-fitzsimons-2a325041" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+			</ul>      
+		</footer>
+	</div>
+</div>
+</body>
+</html>
