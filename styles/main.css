@@ -180,5 +180,12 @@ i {
   color: #FFFFFF;
 }
 
+.bloglist {
+  list-style-type: square;
+  list-style-position: inside;
+}
 
-// Mobile view nav buttons inline?
+.blogbullet {
+  display: list-item;
+  text-align: left;
+}
