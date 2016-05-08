@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miles Fitzsimons - Technical Blog Part 5</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- Header -->
+	<div class="row">
+		<div class="twelve columns">
+			<header>
+				<h1>Miles Fitzsimons</h1>
+				<nav>
+					<ul>
+						<li><a class="navlink" href="../index.html" title="">Home</a></li>
+						<li><a class="navlink" href="../about.html" title="">About</a></li>
+						<li><a class="navlink" href="../projects.html" title="">Projects</a></li>
+						<li><a class="navlink" href="#contacts" title="">Contact</a></li>						
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="row">
+		<div class="two columns"></div>
+		<div class="eight columns">
+			<section>
+				<h3>Technical Part 5</h3>
+				<h6>8 May 2016</h6>
+
+				<article>  
+					<h4>The time I got blocked on a simple problem and solved it in an elegant way</h4>
+					<p>
+						I got blocked on using an HTML wrapper while building this website and my <a class="bodylink" href="http://miles-fitzsimons.github.io/javascript-racer/" target="_blank">JavaScript racer</a>.<br><br>
+						A wrapper is an element (commonly a div) that encloses one or more other elements in the HTML markup, such as:<br><br>
+						
+						<code>&#60;div id="wrap"&#62;</code><br>
+						<code>&nbsp;&nbsp;&#60;h1&#62;Headline&#60;/h1&#62;</code><br>
+						<code>&nbsp;&nbsp;&#60;p&#62;Paragraph&#60;/p&#62;</code><br>
+						<code>&nbsp;&nbsp;&#60;p&#62;Paragraph&#60;/p&#62;</code><br>
+						<code>&#60;/div&#62;</code>
+						<br><br>
+						Wrappers have many uses including enabling special positioning of HTML elements. My problem in particular was how to set up the wrapper and then use it for element positioning.<br><br>
+						I solved the problem through Googling, trial and error and talking to my peers. I found solving the problem initially challenging but then frustrating – I feel I spent a lot of time achieving nothing. Ultimately, talking to my peers was the most useful problem solving technique.<br><br>
+						I learned about some of the subtleties of CSS and the importance of only styling what is needed, when it is needed. This also helped with my understanding of CSS frameworks, such as the <a class="bodylink" href="http://getskeleton.com/" target="_blank">Skeleton</a> framework.
+					</p>
+				</article>
+
+				<article>  
+					<h4>Reflection on problem-solving techniques</h4>
+					<p>
+						This week I used a number of problem solving techniques as discussed below.<br><br>
+						Pseudocode involves breaking a coding problem down into small parts and writing in plain-ish English what is required to solve each part. This is a useful technique and I use it before writing most of my code. It can help overcome mental barriers involved with looking at one big problem.<br><br>
+						Trying something is exactly that and often what I do after pseudo coding. Sometimes it works and sometimes it does not. Trying something else can be useful, but often other problem solving techniques are required.<br><br>
+						Error messages, though confusing, can be very useful. For example, often a simple syntax error will throw out your whole code. Error messages usually have an accompanying line number that is useful for identifying where your code is breaking. Beyond this, error messages can give great insight into a problem, though I found myself sometimes needing to use other problem solving techniques to interpret a error message.<br><br>
+						Console logging is powerful for when your code works, but not in the manner that you expect. Console logs can be added into code and used to print out, for example, current variable values. This can be useful for figuring out what exactly your code is computing at any given point.<br><br>
+						Google is invaluable. Googling your problem usually shows that you are not the first to have it and often provides a solution. It can be hard to Google some problems and often JavaScript queries come back with jQuery solutions. You also usually need to modify the given solution somewhat to adapt it to your particular problem.<br><br>
+						Finally, talking to people can be a great help. Other people may approach your problem in a completely different way, and it can be useful to get this alternate perspective.
+					</p>
+				</article>
+
+				<article>
+					<h4>JavaScript array methods</h4>
+					<p>
+						The .map() method creates a new array with the results of calling a provided function on every element in this array. For example, calling:<br><br>
+						<code>var numbers = [1,2,3,4,5];</code><br>
+						<code>var squares = numbers.map(function(num){return num*num;});</code>
+						<br><br>
+						will return set squares as an array of the squares of the numbers (i.e, <code>squares = [1,4,9,16,25]</code>).<br><br><br>
+
+						The filter() method creates a new array with all elements that pass the test implemented by the provided function. For example, calling:<br><br>
+						<code>var arr = [12, 5, 8, 130, 44];</code><br>
+						<code>var filtered = arr.filter(function(num){return num > 10;});</code>
+						<br><br>
+						will return filtered as an array of the numbers in arr that are greater than 10 (i.e, <code>filtered = [12,130,44]</code>).<br><br><br>
+						The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value. For example, calling:<br><br>
+						<code>var arr=[0,1,2,3,4,5,6];</code><br>
+						<code>var total = arr.reduce(function(a, b) {return a+b;});</code>
+						<br><br>
+						will return total as an integer equal to the sum of the numbers in arr (i.e, <code>total = 21</code>).
+					</p>
+				</article>
+			</section>
+		</div>
+		<div class="two columns"></div>
+	</div>
+
+	<!-- Footer -->
+	<div class="row">
+		<div class="twelve columns">
+			<footer>
+				<ul class="classinfo">
+					<li><a class="navlink" href="http://devacademy.co.nz/" target="_blank">EDA</a></li>
+					<li><a class="footinfo">Kea</a></li>
+					<li><a class="footinfo">2016</a></li>
+					<li><a class="footinfo">Wellington</a></li>
+				</ul>      
+				<ul id="contacts">
+					<li class="contactinfo"><a href="mailto:miles.fitzsimons@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="tel:+64220328976"><i class="fa fa-phone-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="https://github.com/miles-fitzsimons" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="https://au.linkedin.com/in/miles-fitzsimons-2a325041" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+				</ul>      
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
