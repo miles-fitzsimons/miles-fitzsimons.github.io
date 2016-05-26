@@ -23,6 +23,15 @@ h4 {
   color: #000000;
 }
 
+h5 {
+  color: #000000;
+}
+
+pre > code {
+  white-space: initial;
+  text-align: left;
+}
+
 ul {
   list-style: none;
   margin: 0;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miles Fitzsimons - Technical Blog Part 7</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<!-- Header -->
+	<div class="row">
+		<div class="twelve columns">
+			<header>
+				<h1>Miles Fitzsimons</h1>
+				<nav>
+					<ul>
+						<li><a class="navlink" href="../index.html" title="">Home</a></li>
+						<li><a class="navlink" href="../about.html" title="">About</a></li>
+						<li><a class="navlink" href="../projects.html" title="">Projects</a></li>
+						<li><a class="navlink" href="#contacts" title="">Contact</a></li>						
+					</ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="row">
+		<div class="two columns"></div>
+		<div class="eight columns">
+			<section>
+				<h3>Technical Part 7</h3>
+				<h6>26 May 2016</h6>
+
+				<article>  
+					<h4>What is scope and how does it work in JavaScript?</h4>
+					<p>
+						In JavaScript, scope is the set of variables that you have access to. JavaScript has two scopes – local and global. A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout a program. A variable that is declared inside a function is local and is only accessible within that function. A local variable is created and destroyed every time the function is executed. Local and global variables can have the same names, though they are entirely separate variables.
+					</p>
+					<h5>Local Scope Example</h5>
+					<p>
+						Consider the function <code>adder()</code> below. Adder declares and initialises the variables <code>a = 1</code> and <code>b = 2</code>, which are both local to <code>adder()</code>.Outside of the function, variable <code>c</code> is declared and initialised by calling <code>adder()</code>, which returns the value 3. You may expect that <code>c</code> is evaluated to 4 because <code>a</code> is set to 2 above the function call. However, the local variables <code>a</code> and <code>b</code> cannot be effected outside of the function. The <code>a</code> variable outside of the function is a different variable and it has global scope.
+					</p>
+					<pre><code>
+						function adder() {<br>
+						&nbsp;var a = 1;<br>
+						&nbsp;var b = 2;<br>
+						&nbsp;return a + b;<br>
+						}<br>
+						a = 2;<br>
+						var c = adder(); // c = 3;
+					</code></pre>
+					<h5>Global Scope Example</h5>
+					<p>
+						Consider the function <code>subtractor</code> below. Global variable <code>a</code> is declared and initialised outside of the function. The function can access <code>a</code>'s value. Local variable <code>b</code> is declared and initialised inside the function, and the function returns the value of global variable <code>a</code> minus the value of local variable <code>b</code>.
+					</p>
+					<pre><code>
+						var a = 3;<br>
+						function subtractor() {<br>
+						&nbsp;var b = 2;<br>
+						&nbsp;return a - b;<br>
+						}<br>
+						var c = subtractor(); // c = 1;
+					</code></pre>
+				</article>
+
+		</div>
+		<div class="two columns"></div>
+	</div>
+
+	<!-- Footer -->
+	<div class="row">
+		<div class="twelve columns">
+			<footer>
+				<ul class="classinfo">
+					<li><a class="navlink" href="http://devacademy.co.nz/" target="_blank">EDA</a></li>
+					<li><a class="footinfo">Kea</a></li>
+					<li><a class="footinfo">2016</a></li>
+					<li><a class="footinfo">Wellington</a></li>
+				</ul>      
+				<ul id="contacts">
+					<li class="contactinfo"><a href="mailto:miles.fitzsimons@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="tel:+64220328976"><i class="fa fa-phone-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="https://github.com/miles-fitzsimons" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>
+					<li class="contactinfo"><a href="https://au.linkedin.com/in/miles-fitzsimons-2a325041" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+				</ul>      
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
